@@ -1,7 +1,7 @@
 import Home from "./pages/Home"
 import CourseInfopage from "./pages/CourseInfopage"
 import './App.css'
-import {Routes, Route, Outlet, Link} from "react-router-dom"
+import {Routes, Route} from "react-router-dom"
 import Layout from "./pages/Layout"
 
 function App() {

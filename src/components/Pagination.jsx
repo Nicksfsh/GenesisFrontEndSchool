@@ -12,7 +12,7 @@ const Pagination = (props) => {
                     </a>
                 </li>
                 {
-                    pageNumbers.map((number, index) => (
+                    pageNumbers.map((number) => (
                         < li className={number === props.currentPage ? "selected" : ''} key={number}>
                             <a href="#" onClick={() => props.paginate(number)}>
                                 {number}

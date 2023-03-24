@@ -37,6 +37,17 @@ const AllCourses = () => {
     return (
 
         <div>
+            {currentItems.length > 0 &&
+            <Pagination
+                currentPage={currentPage}
+                items={allCourses.length}
+                itemsPerPage={itemsPerPage}
+                paginate={paginate}
+                nextPage={nextPage}
+                prevPage={prevPage}
+            />
+            }
+
             {currentItems.map((item) => <Courseinfo key={item.id} courseId={item.id} rating={item.rating}
                                                     tags={item.tags}
                                                     previewImageLink={item.previewImageLink + '/cover.webp'}

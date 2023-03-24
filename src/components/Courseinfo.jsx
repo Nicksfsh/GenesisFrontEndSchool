@@ -2,9 +2,9 @@ import {Link} from "react-router-dom";
 
 const Courseinfo = (props) => {
 
-    return (<div>
+    return (<div className="lesson_card">
         <div className="block_title"><b>{props.title}</b></div>
-        <div><img width="100%" src={props.previewImageLink}/></div>
+        <div><img alt='img' src={props.previewImageLink}/></div>
         <div className="block_description">{props.description}</div>
         <div className="lessons_title">{props.lessonsCount} Lessons</div>
         <div className="lessons_title">{props.tags}</div>
